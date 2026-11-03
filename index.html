@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name ="viewport" content="width = device-width, initial-scale = 1">
+        <title>Steven Nguyen</title>
+        <link href="style.css" rel = "stylesheet">  
+        <style>
+            #main-links{
+                background-color: gray;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+            #hero{
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                background-image: url("https://cdn.monnit.com/site/images/blog/2016/07/server-room-harzards-1200x628.jpg");
+            }
+            #hero-text{
+                font-size: 200%;
+                stroke: 4px white;
+                color: black;
+                padding: 0 auto;
+                margin: 0 auto;
+                width: 100%;
+            }
+            #hero-text > h1{
+                margin-left: 20px;
+            }
+            #hero-text > h2{
+                margin-left: 20px;
+            }
+            #main-links > h1{
+                border: 1px black;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "nav_bar">
+            <nav id = "nav_home">
+                <a class = "nav_button selected" href="index.html">HOME</a>
+            </nav>
+            <nav id = "main_buttons">
+                <a class = "nav_button selected" href="index.html">ABOUT</a>
+                <a class = "nav_button" href="gallery.html">RESUME</a>
+                <a class = "nav_button" href="contact.html">PROJECTS</a>
+            </nav>
+        </div>
+        <main>
+            <section id="hero">
+                <div id ="hero-text"> 
+                    <h1> Steven Nguyen</h1>
+                    <h2> 4th Year Infomation Systems Student at SDSU</h2>
+                </div>
+            </section>
+            <section>
+                <div id="main-links"> 
+                    <h1>ABOUT</h1>
+                    <h1>RESUME</h1>
+                    <h1>PROJECTS</h1>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer>
+        <p>Steven Nguyen</p>
+    </footer>
+</html>
