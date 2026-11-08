@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name ="viewport" content="width = device-width, initial-scale = 1">
+        <link href="style.css" rel = "stylesheet">  
+        <style>
+            main{
+                display: flex;
+                flex-direction: row;
+                gap: 0px;
+                width: 70%;
+                padding: 0 auto;
+                align-items: center;
+                justify-content: center;
+                height: 90%;
+            }
+            .title{
+                font-weight: lighter;
+                
+            }
+            .resume-info{
+                background-color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+            #resume-main{
+                gap: 40px;
+            }
+            .resume{
+                padding: 20px;
+            }
+            .personal-info{
+                margin-bottom: 10px;
+                text-shadow: 1px 1px purple;
+            }
+            #resume-download{
+                padding: 16px;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "nav_bar">
+            <nav id = "nav-mainbuttons">
+                <a class = "nav_button selected" href="index.html">HOME</a>
+                <a class = "nav_button selected" href="about.html">ABOUT</a>
+                <a class = "nav_button" href="resume.html">RESUME</a>
+                <a class = "nav_button" href="contact.html">PROJECTS</a>
+            </nav>
+        </div>
+        <main>
+            <section id="resume-main">
+                <section class = "resume">
+                    <section class="personal-info">
+                        <h1>Steven Nguyen</h1>
+                        <h2>858-262-3072</h2>
+                    </section>
+                    <h1 class = "title"> Education</h1>
+                    <h3 class="resume-info">
+                    BS in Business Administration 
+                    <br>
+                    San Diego State University
+                    </h3> 
+                </section>
+                <section class="resume">
+                    <h1 class = "title"> Languages</h1>
+                    <h3 class="resume-info">
+                    English, Vietnamese (learning) 
+                    </h3> 
+                </section>
+                <section class="resume">
+                    <h1 class = "title"> Relevant Courses Taken</h1>
+                    <h3 class="resume-info">
+                        MIS 383 (Networks and Data Communications) <br>
+                        MIS 420 (Cloud Services, Architecture, and Security) <br>
+                        MIS 503 (Fundamentals of Cybersecurity Management) <br>
+                    </h3> 
+                </section>
+            </section>
+            <section id="resume-side">
+            <section class = "resume">
+                <section class="personal-info">
+                    <h1>Updated as of 11/7/26</h1>
+                    <h2>stngemail@gmail.com</h2>
+                </section>
+                <h1 class = "title"> Certificates</h1>
+                <h3 class="resume-info">
+                CompTIA Network+, A+
+            </section>
+            <section class="resume">
+                <h1 class = "title"> Software Knowledge</h1>
+                <h3 class="resume-info">
+                    Bash (learning), Python, SQL
+                    <br>
+                    Google / Microsoft Suite, Adobe Premiere
+                    <br>
+                    Windows, Linux
+                </h3> 
+                <a href="files/resume.pdf" download="steven_nguyen_resume" id="resume-download"><h2>Download the PDF resume</h2></a>
+            </section>
+        </section>
+        </main>
+        <footer>
+            <p>&copy; Steven Nguyen</p>
+        </footer>
+    </body>
+</html>

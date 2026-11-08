@@ -3,20 +3,71 @@
     <head>
         <meta charset="utf-8" name ="viewport" content="width = device-width, initial-scale = 1">
         <link href="style.css" rel = "stylesheet">  
+        <style>
+            main{
+                display: flex;
+                flex-direction: row;
+                gap: 0px;
+                width: 80%;
+                padding: 0 auto;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                height: 90%;
+            }
+            #about-text{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                border-radius: 20px;
+                padding-left: 10px;
+            }
+            .title{
+                text-shadow: 1px 1px purple;
+            }
+            #about-pictures{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .personal-info{
+                background-color: aliceblue;
+                padding: 5px;
+            }
+
+        </style>
     </head>
     <body>
         <div id = "nav_bar">
-            <nav id = "nav_home">
+            <nav id = "nav-mainbuttons">
                 <a class = "nav_button selected" href="index.html">HOME</a>
-            </nav>
-            <nav id = "main_buttons">
                 <a class = "nav_button selected" href="about.html">ABOUT</a>
-                <a class = "nav_button" href="gallery.html">RESUME</a>
+                <a class = "nav_button" href="resume.html">RESUME</a>
                 <a class = "nav_button" href="contact.html">PROJECTS</a>
             </nav>
         </div>
+        <main>
+            <section id = "about-pictures">
+               <img src="images/art1.jpg" width="75%" height="100%">
+            </section>
+            <section id="about-text">
+                <h1 class = "title"> ABOUT ME</h1>
+                <h3 class="personal-info">Hi! I'm Steven, and I'm a 4th year information systems major at the Fowler College of Business at San Diego State. 
+               I've always had a interest in computers when I was younger, and I would often have long sessions of scrolling the internet late at night.
+               <br><br>
+               Right now, my goal is to get a job in IT or networking. In the future, I want to go into cybersecurity, specifically into SOC/Incident Response. 
+               I currently have a Network+ certification, but I wish to get the Security+ in the future. 
+               <br><br>
+               I'm a San Diego native,
+               but the rest of my family immigrated here from Vietnam a few decades ago. 
+               Outside of computers, I'm currently working through an art minor right now. I chose to focus on illustrations and digital art. 
+                </h3> 
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Steven Nguyen</p>
+        </footer>
     </body>
-    <footer>
-
-    </footer>
 </html>
