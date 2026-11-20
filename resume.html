@@ -7,12 +7,9 @@
             main{
                 display: flex;
                 flex-direction: row;
-                gap: 0px;
-                width: 70%;
-                padding: 0 auto;
                 align-items: center;
                 justify-content: center;
-                height: 90%;
+                height: 80%;
             }
             .title{
                 font-weight: lighter;
@@ -24,10 +21,10 @@
                 border-radius: 6px;
             }
             #resume-main{
-                gap: 40px;
+                gap: 20px;
             }
             .resume{
-                padding: 20px;
+                padding: 10px;
             }
             .personal-info{
                 margin-bottom: 10px;
@@ -37,23 +34,34 @@
                 padding: 16px;
                 text-decoration: none;
             }
+            @media (max-width: 1024px) {
+                #resume-main{
+                    flex-direction: column;
+                }
+                body{
+                    flex-direction: column;
+                    font-size: 0.65rem;
+                }
+            }
         </style>
     </head>
     <body>
-        <div id = "nav_bar">
-            <nav id = "nav-mainbuttons">
-                <a class = "nav_button selected" href="index.html">HOME</a>
-                <a class = "nav_button selected" href="about.html">ABOUT</a>
-                <a class = "nav_button" href="resume.html">RESUME</a>
-                <a class = "nav_button" href="contact.html">PROJECTS</a>
-            </nav>
-        </div>
+        <header>
+            <div id = "nav_bar">
+                <nav id = "nav-mainbuttons">
+                    <a class = "nav_button selected" href="index.html">HOME</a>
+                    <a class = "nav_button selected" href="about.html">ABOUT</a>
+                    <a class = "nav_button" href="resume.html">RESUME</a>
+                    <a class = "nav_button" href="project.html">PROJECTS</a>
+                </nav>
+            </div>
+        </header>
         <main>
             <section id="resume-main">
                 <section class = "resume">
                     <section class="personal-info">
                         <h1>Steven Nguyen</h1>
-                        <h2>858-262-3072</h2>
+                        <h2>Send email for additional contact info.</h2>
                     </section>
                     <h1 class = "title"> Education</h1>
                     <h3 class="resume-info">
@@ -78,30 +86,28 @@
                 </section>
             </section>
             <section id="resume-side">
-            <section class = "resume">
-                <section class="personal-info">
-                    <h1>Updated as of 11/7/26</h1>
-                    <h2>stngemail@gmail.com</h2>
+                <section class = "resume">
+                    <section class="personal-info">
+                        <h1>Updated as of 11/7/26</h1>
+                        <h2>stngemail@gmail.com</h2>
+                    </section>
+                    <h1 class = "title"> Certificates</h1>
+                    <h3 class="resume-info">
+                    CompTIA Network+, A+ 
+                    </h3>
                 </section>
-                <h1 class = "title"> Certificates</h1>
-                <h3 class="resume-info">
-                CompTIA Network+, A+
+                <section class="resume">
+                    <h1 class = "title"> Software Knowledge</h1>
+                    <h3 class="resume-info">
+                        Bash (learning), Python, SQL
+                        <br>
+                        Google / Microsoft Suite, Adobe Premiere
+                        <br>
+                        Windows, Linux
+                    </h3> 
+                    <a href="files/resume.pdf" download="steven_nguyen_resume" id="resume-download"><h2>Download the PDF resume</h2></a>
+                </section>
             </section>
-            <section class="resume">
-                <h1 class = "title"> Software Knowledge</h1>
-                <h3 class="resume-info">
-                    Bash (learning), Python, SQL
-                    <br>
-                    Google / Microsoft Suite, Adobe Premiere
-                    <br>
-                    Windows, Linux
-                </h3> 
-                <a href="files/resume.pdf" download="steven_nguyen_resume" id="resume-download"><h2>Download the PDF resume</h2></a>
-            </section>
-        </section>
         </main>
-        <footer>
-            <p>&copy; Steven Nguyen</p>
-        </footer>
     </body>
 </html>
