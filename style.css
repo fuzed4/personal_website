@@ -26,7 +26,7 @@ body{
     
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     text-shadow: 1px 1px purple;   
     font-size: 2.5rem;
@@ -44,6 +44,57 @@ body{
     color: grey;
     text-decoration: underline;
 }
+
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX()
+    }
+
+}
+
+.fadeInLeft{
+	animation: fadeInLeft 0.25s ease-out;
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX()
+    }
+
+}
+
+.fadeInRight{
+	animation: fadeInLeft 0.20s ease-out;
+}
+
+.fadeInLeft{
+	animation: fadeInRight 0.20s ease-out;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.fadeIn{
+	animation: fadeIn 0.25s ease-out;
+}
+
 
 @media (max-width: 1024px){
     main{
